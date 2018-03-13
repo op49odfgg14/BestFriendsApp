@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                 final View friendStatusView = getLayoutInflater().inflate(R.layout.is_best_friend, null);
 
+                //build and show popup
                 builder.setView(friendStatusView);
                 AlertDialog dialog = builder.create();
                 dialog.show();
