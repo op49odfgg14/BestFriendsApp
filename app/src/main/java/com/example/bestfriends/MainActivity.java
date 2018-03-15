@@ -1,5 +1,6 @@
 package com.example.bestfriends;
 
+import android.arch.persistence.room.Room;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //instantiate the database!
+        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
+                AppDatabase.class, "database-name").build();
 
         //enterButton set up
         Button enterButton = (Button)findViewById(R.id.enterButton);
