@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         //instantiate the database!
         AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "database-name").build();
+                AppDatabase.class, "BestFriendDatabase").build();
 
         //enterButton set up
         Button enterButton = (Button)findViewById(R.id.enterButton);
