@@ -54,12 +54,8 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if(name.getText().toString().equals("mia")
                         ||name.getText().toString().equals("Mia")
-                        ||name.getText().toString().equals("maya")
-                        ||name.getText().toString().equals("Maya")
                         ||name.getText().toString().equals("Mia Ramsbottom")
-                        ||name.getText().toString().equals("Maya Ramsbottom")
-                        ||name.getText().toString().equals("mia ramsbottom")
-                        ||name.getText().toString().equals("maya ramsbottom")){
+                        ||name.getText().toString().equals("mia ramsbottom")){
 
                     // name is entered
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
